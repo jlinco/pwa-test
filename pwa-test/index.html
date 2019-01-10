@@ -6,8 +6,39 @@
   <base href="https://jlinco.github.io/pwa-test/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    .loader {
+      width: 8px;
+      height: 8px;
+      margin: 40px auto;
+      opacity: 0.5;
+      border-radius: 50%;
+      box-shadow:
+        0 -14px 0 rgba(0,0,0,0.8),
+        10px -10px 0 rgba(0,0,0,0.7),
+        14px 0px 1px rgba(0,0,0,0.6),
+        10px 10px 1px rgba(0,0,0,0.5),
+        0px 14px 2px rgba(0,0,0,0.4),
+        -10px 10px 2px rgba(0,0,0,0.3),
+        -14px 0px 3px rgba(0,0,1,0.2),
+        -10px -10px 3px rgba(0,0,1,0.1);
+      transform-origin: 50%;
+      animation: load 0.5s steps(8, end) infinite;
+    }
+
+    @keyframes load {
+      0% { transform: rotate(0); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
 <link rel="stylesheet" href="styles.4a07a2937eaaabb77460.css"></head>
 <body>
-  <app-root></app-root>
-<script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.1ef83d22ada557f4a131.js"></script><script type="text/javascript" src="main.512aabe16a3cf1932f5d.js"></script></body>
+  <app-root>
+    <nav style="background-color: #673ab7; height: 56px; width:100%"></nav>   
+    <noscript>
+      <h3 style="color: #673ab7; font-family: Helvetica; margin: 2rem;">Sorry, you can only use this app within a Javascript enabled browser</h3>
+    </noscript>
+    <div class="loader"></div>
+  </app-root>
+<script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.1ef83d22ada557f4a131.js"></script><script type="text/javascript" src="main.d4de0b3159dc2f7b3970.js"></script></body>
 </html>
