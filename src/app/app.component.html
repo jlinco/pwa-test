@@ -1,4 +1,12 @@
-<mat-toolbar color="primary">
-  {{ title }}
-</mat-toolbar>
-<app-img-card></app-img-card>
+<mat-sidenav-container class="sn-container">
+  <mat-sidenav #sidenav mode="side" opened>
+    sidebar listing
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <mat-icon class="nav-icon" (click)="sidenav.toggle()">menu</mat-icon>
+      {{ title }}
+    </mat-toolbar>
+    <app-img-card></app-img-card>
+  </mat-sidenav-content>
+</mat-sidenav-container>
