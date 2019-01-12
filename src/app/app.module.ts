@@ -3,8 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { MatToolbarModule,
   MatCardModule,
-  MatButtonModule
+  MatButtonModule,
+  MatSidenavModule
  } from '@angular/material';
+ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+ import {MatIconModule} from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
 import { ImgCardComponent } from './img-card/img-card.component';
@@ -18,9 +21,12 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     MatToolbarModule,
     MatCardModule,
     MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
