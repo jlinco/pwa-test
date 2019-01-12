@@ -1,0 +1,18 @@
+.sn-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.nav-icon {
+    padding:0 14px;
+}
+.nav-icon:hover{
+    cursor: pointer;
+}
+mat-sidenav {
+    width: 300px;
+    background-color: #011627;
+    color: #fff;
+}
