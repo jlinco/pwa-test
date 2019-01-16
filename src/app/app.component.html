@@ -1,12 +1,22 @@
 <mat-sidenav-container class="sn-container">
   <mat-sidenav #sidenav mode="side" opened>
-    sidebar listing
+    <div class="sn-logo-container">
+      <a [routerLink]="''"><img src="assets/img/ifm-logo-dark.svg" alt=""></a>
+    </div>
+    <div class="sn-avatar-container">
+      <img src="assets/img/avatar.png" alt="avatar">
+    </div>
+    <mat-nav-list>
+      <a mat-list-item [routerLink] = "'/dashboard'">Dashboard</a>
+      <a mat-list-item [routerLink] = "'/img-card'">Explore</a>
+    </mat-nav-list>
+    <!-- <h2><a [routerLink] = "'/dashboard'">Dashboard</a></h2>
+    <h2><a [routerLink] = "'/img-card'">Img Card</a></h2> -->
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar color="primary" class="mat-elevation-z4">
       <mat-icon class="nav-icon" (click)="sidenav.toggle()">menu</mat-icon>
-      {{ title }}
     </mat-toolbar>
-    <app-img-card></app-img-card>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

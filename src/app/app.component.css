@@ -5,6 +5,18 @@
     left: 0;
     right: 0;
 }
+.sn-logo-container{
+    width:20%;
+    margin-top:1rem;
+    margin-left:1rem;
+}
+.sn-avatar-container {
+    width:40%;
+    margin:1rem auto;
+}
+.sn-logo-container img:hover{
+    cursor:pointer;
+}
 .nav-icon {
     padding:0 14px;
 }
@@ -14,5 +26,11 @@
 mat-sidenav {
     width: 300px;
     background-color: #011627;
+    color: #fff;
+}
+mat-sidenav-content {
+    background-color: #eeeeee;
+}
+mat-nav-list a{
     color: #fff;
 }
